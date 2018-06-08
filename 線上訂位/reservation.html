@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="topBar.css">
+<link rel="stylesheet" type="text/css" href="booking.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script type="text/javascript">	
+$(document).ready(function() {
+	 $('.XXXXX').parallax("50%",0.6);
+	 $('.bookingSelectLeft').parallax("50%",0.6);
+}
+</script>
+
+
+</head>
+<body>
+<div class="topBar">
+	<div class="logoBar">
+		<a href="../index.html"><img src="logo.png"></a>
+	</div>
+</div>
+<div class="navBar">
+
+	<ul>
+		<li><a href="../牛排介紹/steak introduce.html">牛排介紹</a></li>
+		<li><a href="../精選菜單/menu.html">精選菜單</a></li>
+		<li><a class="bookingSeat" href="reservation.html">線上訂位</a></li>
+		<li><a href="../關於我們/about us.html">關於我們</a></li>
+	</ul>
+
+</div>
+
+
+
+<div class="bookingPicPart">
+	<div class="bookingPicBox">
+		<img src="reservations-valentinesday.0.0.png">
+	</div>
+</div>
+
+<div class="bookingSelectPart">
+	<div class="bookingItems">
+		<!-- <div class="bookingSelectLeft">
+				<img src="fork.png">
+		</div> -->
+		<div class="bookingSelect">
+			<img class="fork" src="fork.png">
+			<img class="knife" src="刀子.png">
+			
+			<div class="topMessage">
+			<span class="redBox"></span>
+				選擇的日期
+				<span class="grayBox"></span>
+				當日已客滿/公休
+			</div>
+		<table class="timeTable">
+
+			<tr class="dateTop">
+				<th>5/28(一)</th>
+				<th>5/29(二)</th>
+				<th>5/30(三)</th>
+				<th>5/31(四)</th>
+				<th>6/1(五)</th>
+				<th class="weekEnd">6/2(六)</th>
+				<th>6/3(日)</th>
+			</tr>
+		    <tr>
+				<td>17:00入店</td>
+				<td>17:00入店</td>
+				<td>17:00入店</td>
+				<td>17:00入店</td>
+				<td>17:00入店</td>
+				<td>17:00入店</td>
+				<td>17:00入店</td>
+			</tr>
+			<tr>
+				<td>17:30入店</td>
+				<td>17:30入店</td>
+				<td>17:30入店</td>
+				<td>17:30入店</td>
+				<td>17:30入店</td>
+				<td>17:30入店</td>
+				<td>17:30入店</td>
+			</tr>
+			<tr>
+				<td>18:00入店</td>
+				<td>18:00入店</td>
+				<td>18:00入店</td>
+				<td>18:00入店</td>
+				<td>18:00入店</td>
+				<td>18:00入店</td>
+				<td>18:00入店</td>
+			</tr>
+			<tr>
+				<td>18:30入店</td>
+				<td>18:30入店</td>
+				<td>18:30入店</td>
+				<td>18:30入店</td>
+				<td>18:30入店</td>
+				<td>18:30入店</td>
+				<td>18:30入店</td>
+			</tr>
+			<tr>
+				<td>19:00入店</td>
+				<td>19:00入店</td>
+				<td>19:00入店</td>
+				<td>19:00入店</td>
+				<td>19:00入店</td>
+				<td>19:00入店</td>
+				<td>19:00入店</td>
+			</tr>
+			<tr>
+				<td>19:30入店</td>
+				<td>19:30入店</td>
+				<td>19:30入店</td>
+				<td>19:30入店</td>
+				<td>19:30入店</td>
+				<td>19:30入店</td>
+				<td>19:30入店</td>
+			</tr>
+			<tr>
+				<td>20:00入店</td>
+				<td>20:00入店</td>
+				<td>20:00入店</td>
+				<td>20:00入店</td>
+				<td class="fullPeople">20:00入店</td>
+				<td>20:00入店</td>
+				<td>20:00入店</td>
+			</tr>
+			<tr>
+				<td>20:30入店</td>
+				<td>20:30入店</td>
+				<td>20:30入店</td>
+				<td>20:30入店</td>
+				<td>20:30入店</td>
+				<td>20:30入店</td>
+				<td>20:30入店</td>
+			</tr>
+			<tr>
+				<td>21:00入店</td>
+				<td>21:00入店</td>
+				<td>21:00入店</td>
+				<td>21:00入店</td>
+				<td>21:00入店</td>
+				<td>21:00入店</td>
+				<td>21:00入店</td>
+			</tr>
+		</table>
+		</div>
+		
+				
+		
+	</div>
+</div>
+
+<div class="tableInfPart">
+	<div class="tableInfBox">
+	<table class="tableInf">
+
+
+		<tr>
+			<td colspan="2">
+			<input type="text" name="name" placeholder="名字" class="input"></td>
+			 <td colspan="2"><input type="number" name="人數" placeholder="人數" class="input"></td>
+		</tr>
+		<tr><td colspan="2">
+			 <input type="text" name="email" placeholder="信箱" class="input"></td>
+			 <td colspan="2">
+			<input type="text" name="moblie" placeholder="電話" class="input">
+			</td>
+		</tr>
+		
+			            
+	</table>
+	<input type="submit" name="send" value="SEND" class="send">
+	</div>
+</div>
+<!-- <div class="XXX">
+	<div class="XXXXX"></div>
+</div> -->
+
+
+<!--FOOTER-->
+<div class="footer">
+	<div class="footerBox">
+		<ul class="iconPart">
+			<a href="#">
+				<li><i class="fa">&#xf09a;</i></li>
+			</a>
+			<a href="#">
+			<li><i class="fa">&#xf231;</i></li>
+			</a>
+			<a href="#">
+			<li><i class="fa">&#xf16d;</i></li>
+			</a>
+			<a href="#">
+			<li><i class="fa">&#xf099;</i></li>
+			</a>
+		</ul>
+		
+		<ul class="navPart">
+			<a href="#"><li>HOME</li></a>
+			<a href="#"><li>DISH</li></a>
+			<a href="#"><li>MENU</li></a>
+			<a href="#"><li>DETOX</li></a>
+			<a href="#"><li>STORY</li></a>
+		</ul>
+		<ul class="nav2Part">
+			<a href="#"><li>CONTACT</li></a>
+			<a href="#"><li>BLOG</li></a>
+			<a href="#"><li>CATERING</li></a>
+			<a href="#"><li>DELIVERY</li></a>
+			
+		</ul>
+	</div>
+</div>
+
+<div class="footerDown">
+	<div class="footerDownBox">
+		<span>Copyright © 1993-2018 chitose all rights reserved.</span>
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

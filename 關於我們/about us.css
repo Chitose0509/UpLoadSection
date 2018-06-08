@@ -1,0 +1,295 @@
+/**{
+	outline: 1px solid #F00;
+}*/
+
+.bannerPart{
+	width: 100%;
+	height: 200px;
+	background-color: #EEE;
+}
+.banner{
+	width: 960px;
+	height: 100%;
+	margin:auto;
+	opacity: 0.9;
+	background-image: url("333.png");
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.4);
+}
+
+.aboutDishPart{
+	width: 100%;
+	height: 480px;
+	background-color: #EEE;
+}
+
+.aboutDish{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+
+	
+}
+.aboutLeft{
+	width: 360px;
+	height: 430px;
+	float: left;
+	padding-top: 40px;
+	background-color: #FFF;
+}
+.DishBar{
+	width: 520px;
+	height: 70px;
+	background-color: #FFF;
+	position: relative;
+	z-index: 2;
+	margin-left: 50px;
+	line-height: 70px;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.4),
+				-1px -1px 5px rgba(0,0,0,0.4);
+}
+.DishBar h2{
+	font-size: 24px;
+	margin-left: 30px;
+	font-family: "思源宋體 TW Regular";
+}
+.DishTxt{
+	width: 260px;
+	height: 250px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	margin-left: 85px;
+	padding-top: 50px;
+}
+.DishTxt p{
+	font-size: 16px;
+	line-height: 30px;
+	font-family: "思源宋體 TW Regular";
+}
+
+
+
+
+
+.aboutRight{
+	width: 600px;
+	height: 100%;
+	float: right;
+	position: relative;
+	
+}
+
+.aboutRight img{
+	display: block;
+	width: 560px;
+	height: 440px;
+	margin: auto;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.chefPart{
+	width: 100%;
+	height: 550px;
+	background-color: #EEE;
+	padding-bottom: 20px;
+}
+.chefInt{
+	width: 100%;
+	height: 50px;
+	background-color: #EEE;
+	padding-bottom: 10px;
+}
+.chefIntBox{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+
+
+}
+.chefIntBox h3{
+	line-height: 50px;
+	font-size: 24px;
+	margin-left: 50px;
+	display: block;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	text-shadow: 2px 2px rgba(0,0,0,0.2);
+	border-radius: 50px 0 0 0 ;
+	border-left:1px solid #000;
+	font-family: "思源宋體 TW Regular";
+}
+.chefIntBox img{
+	position: absolute;
+	top:-50px;
+	left: 28px;
+	width: 70px;
+	height: 70px;
+	transform: rotate(-20deg);
+}
+
+.chefBox{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+	background-image: url("Kitchen-restaurant-sacramento.png");
+}
+.chef1Introduce{
+	width: 280px;
+	height: 200px;
+	background-color:#8a1754;
+	color:#FFF;
+	position: absolute;
+	bottom: 300px;
+	left: -30px;
+	padding-top:20px;
+	opacity: 0;
+	transition: 0.5s;
+	border-radius: 10px;
+	/*clip-path: polygon(0% 0%,100% 0%,100% 90%,40% 90%,30% 100%,30% 90%,0% 90%);*/
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+	filter: drop-shadow(5px 5px 10px rgba(0,0,0,.5));
+
+}
+.chef1Introduce span{
+	display: block;
+	width: 200px;
+	height: 2px;
+	margin-left: 45px;
+	margin-top: 10px;
+	background-color: #FFF;
+}
+
+.chef1:hover .chef1Introduce{
+	opacity: 1;
+}
+.chef1Introduce h2{
+	font-family: "思源宋體 TW Regular";
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 5px;
+	text-align: center;
+}
+.chef2Introduce span{
+	display: block;
+	width: 150px;
+	height: 2px;
+	margin-left: 65px;
+	margin-top: 10px;
+	background-color: #FFF;
+}
+.chef1Introduce p{
+	font-family: "思源宋體 TW Regular";
+	width: 200px;
+	font-size: 18px;
+	margin-left: 40px;
+	margin-top: 10px;
+
+}
+
+.chef2Introduce{
+	
+	width: 280px;
+	height: 200px;
+	background-color:#8a1754;
+	color:#FFF;
+	position: absolute;
+	bottom: 215px;
+	left: -60px;
+	padding-top:20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+	font-family: "思源宋體 TW Regular";
+}
+.chef3Introduce{
+	display: none;
+	width: 280px;
+	height: 200px;
+	background-color: #FFF;
+	position: absolute;
+	bottom: 240px;
+	left: 85px;
+	padding-top:20px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+	font-family: "思源宋體 TW Regular";
+}
+
+.chef1{
+	
+	position: absolute;
+	left:70px;
+	bottom: 0;
+	font-size: 0;
+	cursor: pointer;
+
+}
+
+.chef1pic{
+	opacity: 1;
+}
+.chef1PicLight{
+	display: none;
+	opacity: 0;
+}
+.chef1:hover .chef1Pic{
+	display: none;
+	
+	
+}
+.chef1:hover .chef1PicLight{
+	display: inline;
+	opacity: 1;
+	
+} 
+
+.chef2{
+	position: absolute;
+	left:400px;
+	bottom: 105px;
+	cursor: pointer;
+}
+.chef2Introduce{
+	
+}
+.chef2Introduce h2{
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.chef2Introduce p{
+
+	width: 200px;
+	font-size: 18px;
+	margin-left: 40px;
+	margin-top: 10px;
+
+}
+.chef2PicLight{
+	display: none;
+}
+.chef3{
+	position: absolute;
+	left:580px;
+	bottom: 85px;
+	cursor: pointer;
+}
+.chef3Introduce h2{
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.chef3Introduce p{
+	font-size: 18px;
+	margin-left: 5px;
+	margin-top: 10px;
+
+}
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DISH BEEF</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="topBar.css">
+<link rel="stylesheet" type="text/css" href="wellcome.css">
+<link rel="stylesheet" type="text/css" href="meal.css">
+<link rel="stylesheet" type="text/css" href="reservation.css">
+<link rel="stylesheet" type="text/css" href="map.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollTo-1.4.2-min.js"></script>
+<link rel="stylesheet" type="text/css" href="NotoSerifCJKtc-Regular.otf">
+<link rel="icon" type="text/css" href="logo.png">
+<script>
+jQuery(document).ready(function() {
+var offset = 500;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.back-to-top').fadeIn(duration);
+} else {
+jQuery('.back-to-top').fadeOut(duration);
+}
+});
+
+jQuery('.back-to-top').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+<style type="text/css">
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="topBar">
+	<div class="logoBar">
+		<a href="index.html"><img src="logo.png"></a>
+	</div>
+</div>
+<div class="navBar">
+
+	<ul>
+		<li><a href="牛排介紹/steak introduce.html">牛排介紹</a></li>
+		<li><a href="精選菜單/menu.html">精選菜單</a></li>
+		<li><a href="線上訂位/reservation.html">線上訂位</a></li>
+		<li><a href="關於我們/about us.html">關於我們</a></li>
+	</ul>
+
+</div>
+
+<div class="banner">
+	
+	<div class="bannerBox">
+		<div class="box">
+			<ul>
+				<li><img src="asset 2.png"></li>
+				<li><img src="asset 3.png"></li>
+				<li><img src="asset 4.png"></li>
+				<li><img src="asset 5.png"></li>
+				<li><img src="asset 2.png"></li>
+			</ul>
+		</div>
+			
+		<div class="leftButton">
+			<img src="left-arrow-circular-symbol.png">
+		</div>
+		<div class="rightButton">
+			<img src="right-arrow-circular-button.png">
+		</div>
+
+	</div>
+</div>
+
+<div class="wellcomePart">
+	<div class="wellcomeContent">
+		<div class="wellcomeLeft">
+
+			<span class="titleWellcome">歡迎</span>
+			<img src="向量分隔線.png">
+			<h1><span class="super">THE  </span><span class="dish">D<span class="ish">ISH</span> B<span class="eef">EEF</span></span></h1>
+
+
+			<p>採用最高品級的美國牛肉，台灣極為稀有的木香炙烤方式，保證讓愛吃牛肉的您品嚐到最優質的牛排，另外還有同樣由頂級廚師烹調出的美味海鮮和精緻甜品，保證讓來訪的您滿載而歸。</p>
+
+		</div>
+
+
+
+		<div class="wellcomeRight">
+			<img class="wagyu" src="歡迎和牛.jpg">
+			<img class="lobster" src="歡迎龍蝦.png">
+			
+
+
+
+		</div>
+
+	</div>
+	
+</div>
+<div class="clearfix"></div>
+<!--歡迎頁結束-->
+<div class="mealGallery">
+	<div class="mealBox">
+		<h2>餐點展示</h2>
+		<img src="向量分隔線.png">
+		
+		<div class="gallery">
+			<ul>
+				<li>
+					<a href="牛排介紹/steak introduce.html">
+				<img src="展示1.png">
+					<span class="more">
+							+
+					</span>
+					</a>
+				</li>
+				<li>
+					<a href="牛排介紹/steak introduce.html">
+				<img src="展示2.png">
+					<span class="more">
+							+
+					</span>
+					</a>
+				</li>
+				<li>
+					<a href="牛排介紹/steak introduce.html">
+				<img src="展示3.png">
+					<span class="more">
+							+
+					</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="deliciousSkill">
+	
+	<div class="skillBox">
+		<h2>美味秘訣</h2>
+		<!-- <img src="向量分隔線.png"> -->
+		<div class="skill">
+			<img src="牛肉.png">
+			<img class="rightArrow" src="向右.png">
+			<img src="調理.png">
+			<img class="rightArrow" src="向右.png">
+			<img class="fire" src="炙烤.png">
+			<img class="rightArrow" src="向右.png">
+			<img src="調味.png">
+
+		</div>
+		<div class="skillTxt">
+			<a href="#"><h3>1.精緻的肉品</h3></a>
+			<a href="#"><h3>2.細膩的調理方法</h3></a>
+			<a href="#"><h3>3.講究的炙烤方式</h3></a>
+			<a href="#"><h3>4.優質的調味</h3></a>
+		</div>
+	</div>
+	
+</div>
+<!--美味秘訣結束-->
+<div class="clearfix"></div>
+
+<div class="reservationPart">
+	<a href="線上訂位/reservation.html">
+	<div class="reservationBox">
+		<h2>馬上訂位</h2>
+		<div class="rightAll">
+			<img class="right" src="資產 2.png">
+			<img class="right2" src="資產 3.png">	
+		</div>
+		<span class="go">GO!</span>
+	</div>
+	</a>
+</div>
+
+<div class="menuPart">
+	<div class="menuBox">
+		<div class="menuLeft">
+			<div class="topMenuPic">
+				<img src="menu1.png">
+				<img src="menu2.jpg">
+			</div>	
+			<div class="downMenuPic">
+				<img src="menu3.png">
+				<img src="menu4.png">
+				<div class="ourMenu">
+					<span class="txtOur">Our</span> <span class="txtMenu">Menu</span>
+				</div>
+			</div>
+		</div>
+		<div class="menuRight">
+			<h2>美味餐點</h2>
+			<img src="向量分隔線.png">
+			<p>除了牛排外我們也提供各式經典套餐供您選擇，讓來店蒞臨的各位貴賓能有完美的用餐體驗。
+			</p>
+			<a href="精選菜單/menu.html"><div class="menuButton">full menu</div></a>
+
+		</div>
+
+
+
+	</div>
+
+
+
+</div>
+<!--m-->
+<div class="clearfix"></div>
+
+<div class="mapPart">
+	<div class="mapBox">
+		<div class="mapLeft">
+			<div class="message">
+				<h3 class="address">地址:</h3>
+				<p>
+				台北市和平東路一2巷181號
+				</p>
+				<h3>信箱:</h3>
+				<p>
+				JackS@gmail.com
+				</p>
+				<h3>營業時間:</h3>
+				<p>
+				週二~周日<br> 
+				晚上5:30~9:30
+ 				</p>
+				<h3>聯絡電話:</h3>
+				<p>
+				(03)3578326
+				</p>
+			</div>
+		</div>
+
+		<div class="mapRight">
+			<div><img src="map.png"></div>
+		</div>
+
+	</div>
+	
+
+</div>
+
+<div class="clearfix"></div>
+<!--FOOTER-->
+<div class="footer">
+	<div class="footerBox">
+		<ul class="iconPart">
+			<a href="#">
+				<li><i class="fa">&#xf09a;</i></li>
+			</a>
+			<a href="#">
+			<li><i class="fa">&#xf231;</i></li>
+			</a>
+			<a href="#">
+			<li><i class="fa">&#xf16d;</i></li>
+			</a>
+			<a href="#">
+			<li><i class="fa">&#xf099;</i></li>
+			</a>
+		</ul>
+		
+		<ul class="navPart">
+			<a href="#"><li>HOME</li></a>
+			<a href="#"><li>DISH</li></a>
+			<a href="#"><li>MENU</li></a>
+			<a href="#"><li>DETOX</li></a>
+			<a href="#"><li>STORY</li></a>
+		</ul>
+		<ul class="nav2Part">
+			<a href="#"><li>CONTACT</li></a>
+			<a href="#"><li>BLOG</li></a>
+			<a href="#"><li>CATERING</li></a>
+			<a href="#"><li>DELIVERY</li></a>
+			
+		</ul>
+	</div>
+</div>
+
+<div class="footerDown">
+	<div class="footerDownBox">
+		<span>Copyright © 1993-2018 chitose all rights reserved.</span>
+	</div>
+
+
+</div>
+
+<a href="#"><div class="back-to-top">
+	<img src="up-arrow.png">
+</div></a>
+
+</body>
+</html>

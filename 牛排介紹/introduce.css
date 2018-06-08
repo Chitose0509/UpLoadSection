@@ -1,0 +1,328 @@
+
+.topBannerBar{
+	width: 100%;
+	height: 200px;
+	background-color: #EEE;
+}
+.topBanner{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	background-image: url("topPic.png");
+	box-shadow: 6px 5px 2px rgba(0,0,0,0.4);
+	position: relative;
+
+	z-index: 2;
+}
+.whatSteakPart{
+	width: 100%;
+	height: 70px;
+	background-color: #EEE;
+	
+}
+.whatSteak{
+	width: 820px;
+	height: 100%;
+	margin: auto;
+	line-height: 70px;
+	font-size: 24px;
+	padding-left:140px;
+
+
+}
+.whatSteak h1{
+	float: left;
+	font-family: "思源宋體 TW Regular";
+}
+
+.whatSteakLine{
+	display: inline-block;
+	float: right;
+	width: 450px;
+	height: 35px;
+	border-bottom: 2px solid rgba(0,0,0,0.3);
+	margin-right:150px;
+	
+}
+.menuSelectPart{
+	width: 100%;
+	height: 450px;
+	background-color: #eee;
+	
+}
+.menuSelect{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	background-color: #FFF;
+}
+.menuLeft{
+	width: 440px;
+	height: 100%;
+	/*border: 1px solid #000;*/
+	border-radius: 0 20px 20px 0;
+	box-shadow: -20px -2px 15px -13px rgba(0,0,0,0.4) inset,
+				0 20px 20px -20px rgba(0,0,0,0.4),
+				20px 0px 20px 0px #EEE,
+				0 -20px 20px -20px rgba(0,0,0,0.4);
+	float: left;
+
+	
+}
+.menuLeftarea{
+	width: 440px;
+	height: 450px;
+	margin: auto;
+	line-height: 40px;
+	border-radius: 0 20px 20px 0;
+	background-color: #EEE;
+	
+	
+	
+}
+.menuLeftarea a{
+	text-decoration: none;
+	color:rgba(0,0,0,0.8);
+}
+.steakLine{
+	padding-left: 100px;
+	padding-top: 25px;
+
+}
+.steakLine span{
+	display: inline-block;
+	width: 0px;
+	height: 2px;
+	margin-bottom: 7px;
+	background-color: #000;
+	transition: 0.5s;
+}
+.steakLine h2{
+	display: inline-block;
+	font-size: 24px;
+	margin-left: 10px;
+	font-family: "思源宋體 TW Regular";
+	transition: .5s;
+}
+.steakLine1:hover h2{
+	transform: scale(1.2);
+	color:#8a1754;
+
+}
+.steakLine1:hover span{
+	width: 150px;
+}
+
+
+
+.menuPicPart{
+	float: right;
+	width: 520px;
+	height: 100%;
+	background-color: #FFF;
+	
+	
+}
+.picSteak{
+	width: 330px;
+	height: 450px;
+	margin: auto;
+	
+}
+.picSteak img{
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	box-shadow:3px 3px 3px 0px rgba(20,20,20,.5);
+}
+.clearfix{
+			width: 100%;
+			height: 0;
+			clear: both;
+}
+
+.MeatOutPart{
+	width: 100%;
+	height: 500px;
+	background-color: #eee;
+}
+.meatPart{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	
+}
+.meatLeft{
+	width:490px;
+	
+	padding-top: 90px;
+	float: left;
+
+}
+.meatLeft img{
+	display: block;
+	width: 480px;
+	height: 320px;
+	margin: auto;
+	border-radius: 20px;
+	margin-left: 50px;
+	box-shadow:3px 3px 3px 3px rgba(20,20,20,.5);
+}
+.meatRight{
+	display:block;
+	width: 470px;
+	height: 430px;
+	float: right;
+	
+	padding-top: 70px;
+	
+}
+
+.meatRight img{
+	width: 40px;
+	height: 38px;
+	display: block;
+	margin: auto;
+
+}
+.meatContent{
+	width: 720px;
+	height: 290px;
+	background-color: #8a1754;
+	margin-top:-220px;
+	margin-left: 180px;
+	padding-top: 10px;
+	font-family: "思源宋體 TW Regular";
+	box-shadow:3px 3px 3px 3px rgba(20,20,20,.3);
+}
+.meatBorder{
+	width: 700px;
+	height: 250px;
+	border: 1px solid #FFF;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.meatBorder h2{
+
+	font-size: 24px;
+	color: #FFF;
+	margin-left: 475px;
+}
+.meatBorder hr{
+	width: 220px;
+	margin-left:409px;
+	margin-top:30px;
+}
+.meatBorder p{
+	font-size: 18px;
+	color: #FFF;
+	display: block;
+	width: 205px;
+	height: 150px;
+	margin-left:424px ;
+	margin-top:30px;
+	line-height: 25px;
+}
+/*第一步*/
+
+.conditionOutPart{
+	width: 100%;
+	height: 500px;
+	background-color: #eee;
+}
+.conditionPart{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+
+.conditionLeft{
+	display:block;
+	width: 470px;
+	height: 430px;
+	float: left;
+	
+	padding-top: 70px;
+}
+
+.conditionLeft img{
+	width: 40px;
+	height: 38px;
+	display: block;
+	margin: auto;
+
+}
+.conditionRight{
+	width:490px;
+	
+	padding-top: 90px;
+	float: right;
+	
+}
+.conditionRight img{
+	display: block;
+	width: 480px;
+	height: 320px;
+	margin: auto;
+	border-radius: 20px;
+	margin-left:-50px;
+	box-shadow:3px 3px 3px 3px rgba(20,20,20,.3);
+}
+
+.conditionContent{
+	width: 720px;
+	height: 290px;
+	background-color: #FFF;
+	margin-top:80px;
+	padding-top: 10px;
+	margin-left: 50px;
+	border: 5px solid #FFF;
+	box-shadow: 2px 2px 2px rgba(20,20,20,.1),
+				4px 4px 6px rgba(20,20,20,.1),
+				3px 3px 8px rgba(20,20,20,.2),
+				-2px -2px 2px rgba(20,20,20,.2),
+				-4px -4px 6px rgba(20,20,20,.2),
+				2px 2px 2px 2px rgba(20,20,20,.2) inset;
+	font-family: "思源宋體 TW Regular";
+
+
+}
+
+.conditionBorder{
+	width: 700px;
+	height: 250px;
+	border: 1px solid #FFF;
+	margin: auto;
+	padding-top: 30px;
+	
+
+}
+
+.conditionBorder h2{
+
+	font-size: 24px;
+	color: #000;
+	padding-left: 120px;
+	
+}
+.conditionBorder hr{
+	width: 220px;
+	margin-left: 70px;
+	margin-top: 30px;
+
+}
+.conditionBorder p{
+	font-size: 18px;
+	color: #000;
+	display: block;
+	width: 205px;
+	height: 150px;
+	margin-left:80px ;
+	line-height: 25px;
+	margin-top:30px;
+}
+
+
+
+

@@ -1,0 +1,294 @@
+
+
+.topBannerBar{
+	width: 100%;
+	height: 200px;
+	background-color: #EEE;
+}
+.topBanner{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	box-shadow: 6px 5px 2px rgba(0,0,0,0.4);
+	position: relative;
+	z-index: 2;
+}
+.topBanner img{
+	width: 100%;
+	height: 100%;
+}
+
+.whichDishPart{
+	width: 100%;
+	height: 70px;
+	background-color: #EEE;
+	
+}
+.whichDish{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	line-height: 70px;
+	font-size: 24px;
+	
+
+}
+.whichDish h1{
+	display:inline-block;
+	margin-left: 200px;
+	font-family: "思源宋體 TW Regular";
+}
+
+.whichDishLine{
+	display: inline-block;
+	padding-left: 120px;
+	margin-bottom: 7px;
+	width: 450px;
+	height: 0px;
+	border-bottom: 1px solid #000;
+	
+	
+}
+
+.menuSelectPart{
+	width: 100%;
+	height: 680px;
+	background-color: #EEE;
+}
+
+.menuSelectBox{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+
+.menuLeft{
+	width: 190px;
+	height: 100%;
+	
+	float: left;
+}
+
+.leftContentBox{
+	width: 160px;
+	height: 450px;
+	padding-top: 10px;
+	background-color: #8a1754;
+	border-radius: 0 20px 20px 0;
+	font-family: "思源宋體 TW Regular";
+	box-shadow: 4px 4px 2px rgba(20,20,20,.5);
+}
+
+.leftContentBox ul li{
+	width: 110px;
+	height: 50px;
+	font-size: 24px;
+	color: #FFF;
+	padding-top: 30px;
+	padding-left: 50px;
+	transition: 0.5s;
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+.leftContentBox ul a{
+	
+	text-decoration: none;
+}
+
+.leftContentBox ul li:hover{
+	
+	width: 90px;
+	padding-left:100px;
+	background-color: #FFF; 
+	color:#000;
+	box-shadow: 10px 8px 5px rgba(20,20,20,.3);
+}
+.menuControlBtn{
+	display: block;
+	width: 90px;
+	height: 50px;
+	padding-bottom: 30px;
+	position: relative;
+
+}
+.menuControl{
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.menuControl{
+	display: none;
+}
+.menuRight{
+	overflow: hidden;
+	background-color: #EEE;
+}
+.rightContentBox{
+	transition: 0.5s;
+	position: relative;
+	left: 0px;
+	z-index: 2;
+}
+.menuControl:checked ~ .rightContentBox{
+	position: relative;
+	left:800px;
+}
+
+
+.menuRight{
+	width: 770px;
+	height: 100%;
+	float: right;
+	
+}
+.rightContentBox{
+	width: 770px;
+	height: 600px;
+	/*box-shadow: -4px 2px 2px rgba(20,20,20,.05),
+				-6px 4px 10px rgba(20,20,20,.01),
+				-8px 6px 12px rgba(20,20,20,.1),
+				0px -5px 8px rgba(20,20,20,.2);*/
+				
+	border-radius: 40px 0 0 40px;
+	padding-top: 70px;
+	background-color:rgba(226,217,200,0.4);
+
+}
+
+.soupBar1{
+	width: 660px;
+	height: 250px;
+	
+	margin-left: 60px;
+}
+.soupBox{
+	width:200px;
+	height: 250px;
+	float: left;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.soupBox img{
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: auto;
+	transform: rotate(0deg) scale(1);
+	transform: ;
+	transition: 0.5s;
+}
+.soupBox:hover .soupR{
+	transform: rotate(360deg) scale(1.2);
+	padding-bottom: 20px;
+	
+	
+}
+.soupTxt{
+	width:180px;
+	height:68px;
+	margin: auto;
+	border: 2px solid rgba(0,53,103,0.4);
+	margin-top: -50px;
+	text-align: center;
+	line-height: 30px;
+	padding-top: 40px; 
+}
+.soupTxt .text1{
+	display: block;
+	font-family: "思源宋體 TW Regular";
+	font-size: 24px;
+}
+.soupTxt .text2{
+	display: block;
+	font-family: Felix Titling;
+	font-size: 12px;
+}
+
+
+.clearfix{
+			width: 100%;
+			height: 0;
+			clear: both;
+}
+
+.soupBar2{
+	width: 660px;
+	height: 250px;
+	
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+
+.discountPart{
+	width: 100%;
+	height: 400px;
+	background-color: #EEE;
+}
+.discountBox{
+	width: 960px;
+	height: 350px;
+	margin: auto;
+	padding-top: 50px;
+}
+.hexagon{
+	width: 120px;
+	height: 208px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	transform: rotate(30deg);
+	position: relative;
+
+}
+.hexagonBox{
+
+}
+.hexagonBox img{
+	clip-path:polygon(100%);
+	width: 100%;
+	height: 100%;
+}
+.hexagon:before{
+	content:'';
+	width: 120px;
+	height: 208px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	position: absolute;
+	top:0;
+	left:0px;
+	transform: rotate(60deg);
+}
+.hexagon:after{
+	content:'';
+	width: 120px;
+	height: 208px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	position: absolute;
+	top:0;
+	left:0px;
+	transform: rotate(-60deg);
+}
+@keyframes SS{
+	0%{clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);}
+	100%{clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%, 0% 75%, 0% 75%, 0% 75%, 0% 75%, 0% 75%);}
+}
+
+.test{
+	width: 200px;
+	height: 200px;
+	background-color: #BBF;
+	clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+	margin:auto;
+	animation: SS 10S;
+}
+.test img{
+	width: 100%;
+	height: 100%;
+}
+
+/*圓形clip-path: circle(50% at 50% 50%);*/
+/*clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);*/

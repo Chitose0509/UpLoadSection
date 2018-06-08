@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+	
+	// 到第幾頁的 Function
+function gotoPage(i) {
+    $('.page').eq(i).removeClass('active');
+    if ((i-1) >= 0) {
+        $('.page').eq(i-1).addClass('active');
+    }
+}
+// 3D CSS3 Book Generator 的主要程式碼片段
+(function($){
+    $.fn.extend({
+        EbookTransformer: function(options) {
+            var defaults = {
+                height: 400 // 書本的寬度
+            };
+            var options = $.extend(defaults, options);
+            // 書本的主要物件
+            var objBook = $(this);
+            var vPages = new Array();
+            var vSides = new Array();
+            var vSubObj = new Array();
+            var iTmpHeight = 0;
+            // 初始化函示
+            init = function() {
+                objBook.children().each(function(i){
+                    if (iTmpHeight + this.clientHeight > options.height && vSubObj.length) {
+                        vSides.push(vSubObj);
+                        vSubObj = new Array();
+                        iTmpHeight = 0;
+                    }
+                    iTmpHeight += this.clientHeight;
+                    vSubObj.push(this);
+                });
+
+                if (iTmpHeight > 0) {
+                    vSides.push(vSubObj);
+                }
+                $(vSides).wrap('<div class="side"></div>');
+                var iPage = 1;
+                var vCouples = Array();
+                objBook.children().each(function(i){
+                    // 加入上下頁按鈕 如果需要不同方式導航可由這裏修改
+                    if (vCouples.length == 0) {
+                        $(this).append('<button onclick="gotoPage('+iPage+')">Next page</button>');
+                    }
+                    if (vCouples.length == 1) {
+                        $(this).append('<button onclick="gotoPage('+(iPage-1)+')">Previous page</button>');
+                    }
+                    vCouples.push(this);
+                    if (vCouples.length == 2) {
+                        vPages.push(vCouples);
+                        vCouples = new Array();
+                        iPage++;
+                    }
+                });
+                if (vCouples.length == 1) {
+                    vCouples.push($('<div class="side"><h2>The end</h2><button onclick="gotoPage('+(iPage-1)+')">Previous page</button></div>')[0]);
+                    vPages.push(vCouples);
+                }
+                $(vPages).wrap('<div class="page"></div>');
+                var sExtraCSS = '';
+                objBook.children().each(function(i){
+                    sExtraCSS += ''+
+                    '.page:nth-child('+(i+1)+') {'+
+                    '-moz-transform: translate3d(0px, 0px, -'+i+'px);'+
+                    '-webkit-transform: translate3d(0px, 0px, -'+i+'px);'+
+                    '}'+
+                    '.active:nth-child('+(i+1)+') {'+
+                    '-moz-transform: rotateY(-179deg) translate3d(0px, 0px, -'+i+'px);'+
+                    '-webkit-transform: rotateY(-179deg) translate3d(0px, 0px, -'+i+'px);'+
+                    '}';
+                });
+                $('.book').append('<style>'+sExtraCSS+'</style>');
+            };
+            // 執行初始化
+            init();
+        }
+    });
+})(jQuery);
+// 當網頁讀取完成開時執行
+jQuery(window).load(function() {
+    $('.book').EbookTransformer({height: 480});
+});
+</script>
+
+<style type="text/css">
+body {
+    background: url('background.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /* CSS3 perspective and transform */
+    -webkit-perspective: 1800px;
+    -moz-perspective: 1800px;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.book {
+    left: 530px;
+    position: absolute;
+    top: 70px;
+    width: 400px;
+
+    /* CSS3 transform */
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    -moz-transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+.page {
+    background-color: #fff;
+    position: absolute;
+
+    /* CSS3 transform */
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+}
+
+.side:first-child {
+    background: -webkit-linear-gradient(-45deg, #fff 0%, #ddd 100%) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(-45deg, #fff 0%, #ddd 100%) repeat scroll 0 0 transparent;
+    border-left: 2px solid #000;
+    height: 500px;
+    overflow: hidden;
+    padding: 30px 35px 80px 35px;
+    position: absolute;
+    width: 400px;
+
+    /* CSS3 transform */
+    -webkit-transform: translate3d(0px, 0px, 0.5px);
+    -moz-transform: translate3d(0px, 0px, 0.5px);
+}
+
+.side:last-child {
+    background: -webkit-linear-gradient(-45deg, #fff 0%, #ddd 100%) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(-45deg, #fff 0%, #ddd 100%) repeat scroll 0 0 transparent;
+    border-right: 2px solid #000;
+    height: 500px;
+    overflow: hidden;
+    padding: 30px 35px 80px 35px;
+    position: absolute;
+    width: 400px;
+
+    /* CSS3 transform */
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+button {
+    margin-top:10px;
+    float:right;
+    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #050505;
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+        top,
+        #fff 0%,
+        #ebebeb 50%,
+        #dbdbdb 50%,
+        #b5b5b5);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#fff),
+        color-stop(0.50, #ebebeb),
+        color-stop(0.50, #dbdbdb),
+        to(#b5b5b5));
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #949494;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0.5),
+        inset 0px 0px 2px rgba(255,255,255,1);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.2),
+        0px 1px 0px rgba(255,255,255,1);
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="book">
+    <img src="menu1.jpg" alt="JavaScript Programmer's Reference" style="display:block" />
+    <h2>JavaScript Programmer's Reference</h2>
+    <h4>Cliff Wootton</h4>
+    <h4>Wrox Press Ltd.</h4>
+    <div>JavaScript Programmer's Reference</div>
+    <h3>About the Author</h3>
+    <div>Cliff Wootton lives in the south of England and works on multimedia systems and content management software for large data driven web sites. Currently he is developing interactive TV systems for BBC News Online in London ( http://www.bbc.co.uk/news ) and previously worked for other commercial broadcasters on their web sites. Before that he spent several years developing geophysical software and drawing maps with computers for oil companies.</div>
+    <div>Cliff is married with three daughters and a growing collection of bass guitars.</div>
+    <h3>Acknowledgements</h3>
+    <div>It's hard to believe I've actually reached the stage of writing the introductory pages to this book. It's been a long process and I don't think I would have reached this point without the help of Tim Briggs at Wrox, who very gently urged me onwards and gave me encouragement when I needed it.</div>
+</div>
+
+
+</body>
+</html>

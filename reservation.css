@@ -1,0 +1,194 @@
+
+.reservationPart{
+	width: 100%;
+	height: 320px;
+	background-color: #aaa;
+	position: relative;
+	background-image: url("牛排店.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+
+}
+.reservationPart a{
+	text-decoration: none;
+}
+.reservationBox{
+	width: 390px;
+	height: 140px;
+	background-color: #FFF;
+	
+
+	margin:auto;
+	text-align: center;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 0;
+
+}
+.reservationBox:hover{
+	background-color: rgba(0,0,0,0.7);
+
+
+}
+.reservationBox h2{
+	
+	font-size: 24px;
+	font-family: "思源宋體 TW Regular","微軟正黑體";
+	font-weight: bold;
+	color:#952286;
+	transition: 0.5s;
+
+	
+}
+.reservationBox:hover h2{
+	color:#FFF;
+}
+.rightAll{
+	margin:0 auto;
+	position: relative;
+}
+.right{
+	opacity: 1;
+	transition: 0.5s;
+}
+.right2{
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+.reservationBox:hover .right{
+	opacity: 0;
+}
+.reservationBox:hover .right2{
+	opacity: 1;
+}
+
+.reservationBox .go{
+	transition: 0.5s;
+	font-size: 24px;
+	font-family: "Felix Titling","Arial";
+	color:#952286;
+}
+.reservationBox:hover .go{
+	color:#FDD;
+}
+
+
+.menuPart{
+	height: 435px;
+	width: 100%;
+	
+}
+
+.menuBox{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+.menuLeft{
+	width: 520px;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-size: 0;
+	font-family: "Felix Titling","Arial";
+	
+}
+
+.topMenuPic img{
+	margin-top:58.5px;
+	width: 183px;
+	height: 160px;
+}
+
+
+
+
+.downMenuPic img{
+	width: 183px;
+	height: 160px;
+}
+
+.menuRight{
+	width: 440px;
+	height: 351px;
+	float: right;
+	padding-top: 84px;
+	text-align: center;
+
+}
+.menuRight h2{
+	font-size: 24px;
+	font-family: "思源宋體 TW Regular","微軟正黑體";
+	font-weight: bold;
+	color:#952286;
+	
+}
+.menuRight img{
+	margin-top:10px;
+}
+.menuRight p{
+	display: block;
+	width: 300px;
+	margin:0 auto;
+	margin-top:10px;
+	font-size: 18px;
+	font-family:"思源宋體 TW Regular","微軟正黑體";
+	line-height: 30px;
+}
+.menuRight a{
+	text-decoration: none;
+}
+
+.menuButton{
+	width: 205px;
+	height: 45px;
+	margin:0 auto;
+	margin-top:70px;
+	border:3px solid #000;
+	font-size: 18px;
+	line-height: 45px;
+	transition: 0.5s;
+	font-family:"Felix Titling","Arial";
+	color: rgba(0,0,0,0.8);
+}
+
+.menuButton:hover{
+	background-color: rgba(0,0,0,0.8);
+	color:rgba(255,255,255,0.8);
+}
+.downMenuPic{
+	position: relative;
+}
+
+.ourMenu{
+	width: 145px;
+	height: 145px;
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:-72.5px;
+	left:183px;
+	
+}
+
+.ourMenu .txtOur{
+	display: block;
+	font-size:24px;
+	color: #FFF;
+	margin-top: 48px;
+}
+.ourMenu .txtMenu{
+	display: block;
+	font-size:24px;
+	color:#FFF;
+	
+}

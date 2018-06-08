@@ -1,0 +1,226 @@
+.bookingPicPart{
+	width: 100%;
+	height: 200px;
+	background-color: #EEE;
+	
+
+	
+}
+.bookingPicBox{
+	width:960px;
+	height: 100%;
+	margin:auto;
+	box-shadow: 6px 5px 2px rgba(0,0,0,0.4);
+	position: relative;
+	z-index: 2;
+
+}
+
+.bookingPicBox img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.bookingSelectPart{
+	width: 100%;
+	height: 750px;
+	background-color: #EEE;
+	
+}
+/*.bookingItems{
+	width: 1200px;
+	height: 100%;
+	margin: auto;
+
+}*/
+.bookingSelectLeft{
+	width: 100px;
+	height: 100%;
+	float: left;
+	padding-top: 100px;
+}
+.bookingSelectLeft img{
+	width: 100px;
+	height: 600px;
+	transition: .5s;
+}
+.bookingSelectLeft:hover.bookingSelectLeft img{
+	transform: rotate(35deg);
+}
+.bookingSelectRight{
+	float: right;
+	padding-top: 100px;
+	padding-right:60px;
+}
+.bookingSelectRight img{
+	width: 80px;
+	height: 600px;
+	transition: 0.5s;
+}
+.bookingSelectRight:hover.bookingSelectRight img{
+	transform: rotate(-35deg);
+}
+.bookingSelect{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+	
+}
+.bookingSelect .fork{
+	position: absolute;
+	width: 100px;
+	height: 600px;
+	top:100px;
+	left: -30px;
+
+}
+.bookingSelect .knife{
+	position: absolute;
+	width: 80px;
+	height: 600px;
+	right: -30px;
+	top:100px;
+}
+
+.bookingSelect{
+	margin: auto;
+}
+.topMessage{
+	width: 300px;
+	height: 80px;
+	margin: auto;
+	line-height: 100px;
+}
+
+
+.timeTable{
+	
+	border:30px solid rgba(255,0,0,0.4); 
+	margin: auto;
+	font-size:16px;
+	box-shadow: 3px 3px 3px rgba(20,20,20,.5);
+
+
+}
+.weekEnd{
+	height: 50px;
+	background-color: #CCC;
+	position: relative;
+	z-index: 0;
+	
+}
+.fullPeople{
+
+	background-color: #CCC;
+	position: relative;
+	z-index: 0;
+	
+}
+.timeTable td:hover{
+	background-color: #F00;
+	position: relative;
+	z-index: 0;
+	border-radius:10px;
+}
+
+.dateTop th{
+	 width:100px;
+	 height: 90px;
+	 line-height: 90px;
+
+	 border-bottom:30px solid rgba(255,0,0,0.4)
+
+}
+
+.timeTable td{
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	border-radius: 10px;
+	cursor: pointer;
+
+
+}
+.timeTable caption{
+	font-size: 24px;
+	height:40px;
+	line-height: 40px;
+}
+
+
+.redBox{
+	display:inline-block;
+	width: 32px;
+	height: 32px;
+	background-color: #F00;
+	border-radius: 5px;
+}
+.grayBox{
+	display:inline-block;
+	width: 32px;
+	height: 32px;
+	background-color: #CCC;
+	border-radius: 5px;
+
+}
+.tableInfPart{
+	width: 100%;
+	height: 150px;
+	margin-bottom: 20px;
+	background-color: #EEE;
+}
+.tableInfBox{
+	width: 960px;
+	height: 100%;
+	margin: auto;
+}
+
+.tableInf{
+	margin: auto;
+	border:1px solid #000;
+}
+
+.tableInf{
+	box-shadow: 3px 3px 3px rgba(20,20,20,.5);
+}
+.tableInf td{
+	width: 350px;
+	height: 30px;
+	border:10px solid #e2d9c8;
+	
+}
+.tableInf input{
+	width: 350px;
+	height: 30px;
+}
+.send{
+	display: block;
+	margin:auto;
+	margin-top: 20px;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	color: #fff;
+    background-color: #ff7878;
+	text-shadow: 2px 2px 2px rgba(20,20,20,.5);
+	line-height: 30px;
+}
+
+.XXX{
+	height: 1000px;
+	width: 100%;
+	background-image:
+}
+.XXXXX{
+	 background: url("reservations-valentinesday.0.0.png")50% 0 no-repeat fixed;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height: 920px;
+    display: block;
+    text-align: center;
+    z-index:2;
+}
